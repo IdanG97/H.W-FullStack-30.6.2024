@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesson 1</title>
+</head>
+
+<body>
+    <!-- Exercise 1 -->
+    <h1>Hello, my name is John</h1>
+    <h2>Hello, my name is John</h2>
+    <h3>Hello, my name is John</h3>
+    <h4>Hello, my name is John</h4>
+    <h5>Hello, my name is John</h5>
+
+    <!-- Exercise 1,2a -->
+    <h1>Hello, my name is John <i>03/07/2024</i></h1>
+    <h2>Hello, my name is John <i>03/07/2024</i></h2>
+    <h3>Hello, my name is John <i>03/07/2024</i></h3>
+    <h4>Hello, my name is John <i>03/07/2024</i></h4>
+    <h5>Hello, my name is John <i>03/07/2024</i></h5>
+
+    <!-- Exercise 2b -->
+    <p>Lorem ipsum is <b>simply dummy text of the printing and typesetting
+            industry.</b><br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit Ea laborum quod inventore placeat
+        autem.<br>
+        Reiciendis veritatis non ex tempora error cupiditate id,
+        architecto assumenda!
+    </p>
+
+    <!-- Exercise 3,4 -->
+    <a href="https://www.youtube.com/watch?v=ZseJU58RQ1Y" target="_blank"><img
+            src="https://www.yes.co.il/o/s/35670/ibms/VP000346077.JPG?1637223445000" alt="It's sunny today" height="150"
+            width="250"></a>
+    <a href="https://www.youtube.com/watch?v=AgfhplK4thM" target="_blank"><img
+            src="https://archive.jdn.co.il/wp-content/uploads/2017/12/F100205KG04.jpg"
+            alt="We can expect rainy weather tomorrow." height="150" width="250"></a>
+    <a href="https://www.youtube.com/watch?v=EWgbVNFMw74" target="_blank"><img
+            src="https://media.istockphoto.com/id/1098124180/photo/lightning-strike-from-a-thunderstorm.jpg?s=2048x2048&w=is&k=20&c=8q-FqrgyOS5eObqeFQ2pQjErFbtMsZVdivaNG_5hUlg="
+            alt="He braved the stormy weather" height="150" width="250"></a>
+    <a href="https://www.youtube.com/shorts/16OvI5d8iLY" target="_blank"><img
+            src="https://www.grangerwasteservices.com/wp-content/uploads/2021/03/iStock-901821554-600x400.jpg"
+            alt="It was so windy my umbrella turned inside out" height="150" width="250"></a>
+
+    <!-- Exercise 5 -->
+
+    <body>
+        <h1>My favorite cocktails are</h1>
+        <ol>
+            <li>Mojito</li>
+            <li>Gin Fizz</li>
+            <li>Long Island Tea</li>
+        </ol>
+    </body>
+    <br>
+    <!-- Exercise 6 -->
+    <h1>Teddy Swims</h1>
+    <h2>Biographie</h2>
+    <img src="https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/379253627_869283224560392_3491809982775483915_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=95CMFMvZO3YQ7kNvgEhpEbA&_nc_ht=scontent.ftlv5-1.fna&oh=00_AYAKIHMgmkxA3eZ7itDFNUu-JdszEVIWTtYKKcTqmMWGiA&oe=668CA7F8"
+        alt="singer Teddy Swims" height="300" width="350s">
+    <a href="https://en.wikipedia.org/wiki/Teddy_Swims" target="_blank">Link to wikipedia</a>
+    <p>Jaten Collin Dimsdale (born September 25, 1992), also known pseudonymously as Teddy Swims,<br> is an American
+        singer-songwriter whose music blends genres including R&B, soul, country, and pop. <br> He originally attracted
+        fans through song covers on his YouTube channel throughout 2019 and 2020. <br> His third extended play Tough
+        Love
+        (2022) caused him to chart on the Billboard 200 for the first time.</p>
+    <hr>
+    <h2>Songs</h2>
+    <p>Lose control<br> Hammer to the heart</p>
+    <hr>
+    <h2>Albums</h2>
+    <p>I've Tried Everything But Therapy (Part 1)<br> I've Tried Everything But Therapy (Part 2)</p>
+    <br>
+    <hr>
+    <video width="320" height="240" autoplay muted controls
+    src="https://www.w3schools.com/html/movie.mp4" type="video/mp4"></video>
+    <!-- Exercise 7 -->
+    <footer>
+        <h2>idan gueta, idanbalef@gmail.com</h2>
+    </footer>
+</body>
+
+</html>
