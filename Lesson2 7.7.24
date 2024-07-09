@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Lesoon 2</title>
+</head>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    th,
+    td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<body>
+    <!-- Exercise 1 -->
+    <h1 style="color: rgb(255, 105, 105);">Choose a city</h1>
+    <form>
+        <select name="" id="">
+            <option value="berlin">Berlin</option>
+            <option value="tel_aviv">Tel Aviv</option>
+            <option value="tokyo">Tokyo</option>
+        </select>
+    </form>
+    <!-- Exercise 2 -->
+    <h1 style="color: chartreuse;">My form</h1>
+    <form>
+        <label for="my_name">My name:</label>
+        <input type="text" id="my_name" name="my_name" required max="10">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="my_email">My E-mail:</label>
+        <input type="email" id="my_email" name="my_email" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Exercise 3 -->
+    <h1 style="color: darkorange;">Pasta and meatballs</h1>
+    <p>Make this simple and easy dish of <b>Pasta and meatballs</b> for you and your childern at home, very quick and
+        very delicious.</p>
+    <br>
+    <h2>Ingredients</h2>
+    <ul>
+        <li>1 1/2 pounds pasta (such as penne)</li>
+        <li>1/2 pound lean ground beef</li>
+        <li>1 cup grated Parmesan cheese</li>
+        <li>1/4 cup shredded mozzarella cheese</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 teaspoon salt</li>
+        <li>1 teaspoon freshly ground black pepper</li>
+        <li>1 (14 oz) can crushed tomatoes, drained and rinsed</li>
+        <li>1 (14 oz) can crushed tomatoes,
+    </ul>
+    <h2>preparation</h2>
+    <ol>
+        <li>In a large skillet, heat 2 tablespoons of olive oil over medium heat.</li>
+        <li>Add the minced garlic and cook, stirring occasionally, until fragrant, about 30 seconds.</li>
+        <li>Add the ground beef and cook, stirring occasionally, until browned and cooked through, about 4-5 minutes.
+        </li>
+        <li>Add the Parmesan cheese and cook, stirring occasionally, until melted, about 1 minute.</li>
+        <li>Add the mozzarella cheese and cook, stirring occasionally, until melted, about 1 minute.</li>
+        <li>Add the Parmesan cheese and cook, stirring occasionally, until melted, about 1 minute.</li>
+        <li>Add the Parmesan.</li>
+    </ol>
+    <!-- Exercise 4 -->
+    <h1 style="color: rgb(0, 188, 188);">Let's go somewhere</h1>
+    <form>
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name" autofocus>
+        <br>
+        <label for="family_name">Family name:</label>
+        <input type="text" id="family_name" name="family_name" placeholder="put your family name here">
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="gender">Female</label>
+        <br><br>
+        <label for="city">Choose a city:</label>
+        <select name="choose_city" id="city">
+            <option value="tel aviv">Tel Aviv</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="berlin">Berlin</option>
+            <option value="new york">New York</option>
+            <option value="london">London</option>
+            <option value="paris">Paris</option>
+            <option value="rome">Rome</option>
+            <option value="madrid">Madrid</option>
+            <option value="amsterdam">Amsterdam</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="vienna">Vienna</option>
+            <option value="prague">Prague</option>
+            <option value="bratislava">Bratislava</option>
+            <option value="budapest">Budapest</option>
+            <br>
+        </select>
+        <br><br>
+        <label for="travel_date">Date to travel:</label>
+        <br>
+        <label for="first_day">From:</label>
+        <input type="date" id="first_day" name="first_day">
+        <label for="last_day">To:</label>
+        <input type="date" id="last_day" name="last_day">
+        <br><br>
+        <label for="deals">Give me deals for:</label>
+        <br>
+        <input type="checkbox" id="deals" name="deals">
+        <label for="tel_aviv">Tel Aviv</label>
+        <br>
+        <input type="checkbox" id="tokyo" name="deals">
+        <label for="tokyo">Tokyo</label>
+        <br>
+        <input type="checkbox" id="berlin" name="deals">
+        <label for="berlin">Berlin</label>
+        <br>
+        <input type="checkbox" id="new york" name="deals">
+        <label for="new york">New york</label>
+        <br>
+        <input type="checkbox" id="london" name="deals">
+        <label for="london">London</label>
+        <br><br>
+        <input type="submit">
+    </form>
+    <!-- Exercise 5 -->
+    <form>
+        <h1 style="color: brown;">Ecom Academy</h1>
+        <h2>Adress</h2>
+        31th' Somthing st' Tel Aviv
+        <br>
+        <h2>Phone</h2>
+        +972-5-12345678
+        <h2>Internet site</h2>
+        <a href="https://www.ecomschool.co.il/">https://www.ecomschool.co.il</a>
+        <h2>Hours</h2>
+        <table>
+            <tr>
+                <th>-</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Closed</td>
+                <td>13:30 - 17:30</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>8:30 - 12:15</td>
+                <td>13:30 - 17:30</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:30 - 12:15</td>
+                <td>13:30 - 17:30</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>8:30 - 12:15</td>
+                <td>13:30 - 17:30</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>8:30 - 12:15</td>
+                <td>13:30 - 17:30</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>9:00 - 12:00</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </form>
+    <!-- Exercise 6 -->
+    <h1 style="color: darkseagreen;">Fortnite</h1>
+    <p>Fortnite is an online video game developed by Epic Games and resleased in 2017.<br>
+        It is aveilable in three distinct game mode versions that otherwise shere the same general gmaeplay and game
+        engine: Fortnite: Save the World,<br>a cooperative hybrid-tower defense-shooter-survival game for up to four
+        players.<br>to fight off zombie-like creatures and defend objects with traps and fortifications they can build.
+    </p>
+    <h2>Characters</h2>
+    <table>
+        <tr>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Year of Birth</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td><img src="pics/T-AthenaSoldiers-CID-353-Athena-Commando-F-Bandolier_01.webp" alt="Character 1"
+                    height="100"></td>
+            <td>Bandolette</td>
+            <td>1995</td>
+            <td>
+                <button>Modify</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="pics/T_Kairos_ConstructorM.webp" alt="Character 2" height="100"></td>
+            <td>Kyle</td>
+            <td>1992</td>
+            <td>
+                <button>Modify</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="pics/T-AthenaSoldiers-CID-401-Athena-Commando-M-Miner.webp" alt="Character 3" height="100">
+            </td>
+            <td>Cole</td>
+            <td>1998</td>
+            <td>
+                <button>Modify</button>
+                <button>Delete</button>
+            </td>
+        </tr>
+    </table>
+    <!-- Exercise 7 -->
+    <table>
+        <thead>
+            <tr>
+                <th>X</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>2</td>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+                <td>12</td>
+                <td>14</td>
+                <td>16</td>
+                <td>18</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>3</td>
+                <td>6</td>
+                <td>9</td>
+                <td>12</td>
+                <td>15</td>
+                <td>18</td>
+                <td>21</td>
+                <td>24</td>
+                <td>27</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>4</td>
+                <td>8</td>
+                <td>12</td>
+                <td>16</td>
+                <td>20</td>
+                <td>24</td>
+                <td>28</td>
+                <td>32</td>
+                <td>36</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>5</td>
+                <td>10</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+                <td>35</td>
+                <td>40</td>
+                <td>45</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>6</td>
+                <td>12</td>
+                <td>18</td>
+                <td>24</td>
+                <td>30</td>
+                <td>36</td>
+                <td>42</td>
+                <td>48</td>
+                <td>54</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>7</td>
+                <td>14</td>
+                <td>21</td>
+                <td>28</td>
+                <td>35</td>
+                <td>42</td>
+                <td>49</td>
+                <td>56</td>
+                <td>63</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td>8</td>
+                <td>16</td>
+                <td>24</td>
+                <td>32</td>
+                <td>40</td>
+                <td>48</td>
+                <td>56</td>
+                <td>64</td>
+                <td>72</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td>9</td>
+                <td>18</td>
+                <td>27</td>
+                <td>36</td>
+                <td>45</td>
+                <td>54</td>
+                <td>63</td>
+                <td>72</td>
+                <td>81</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td>10</td>
+                <td>20</td>
+                <td>30</td>
+                <td>40</td>
+                <td>50</td>
+                <td>60</td>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
