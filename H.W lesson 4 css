@@ -1,0 +1,54 @@
+/* Ex 1 */
+.highlight-sentence {
+    background-color: yellow;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.2em;
+    
+}
+.highlight-sentence::first-letter {
+    color: red;
+    font-size: 2em;
+    
+}
+
+/* Ex 2 */
+a {
+    text-decoration: none;
+}
+.ingredients {
+    text-decoration: line-through; 
+}
+
+/* Ex 3 */
+.sentence {
+    text-transform: uppercase; 
+    text-align: center; 
+    margin: 5px 0; 
+}
+
+/* Ex 4 */
+.dog {
+    background-color: rgb(67, 179, 63);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+img {
+    border: 6px solid white;
+    padding: 40px;
+    border-radius: 40px;
+    width: 900px;
+}
+.header {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
