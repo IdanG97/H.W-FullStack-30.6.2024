@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework lesson 4</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Ex 1 -->
+    <p class="highlight-sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus obcaecati esse
+        autem! Earum ut voluptatibus dolore expedita laboriosam fugit sequi voluptates non, quod deserunt facilis ipsa
+        est, iure delectus explicabo?</p>
+    <br><br>
+    <!-- Ex 2 -->
+    <p><a href="https://en.wikipedia.org/wiki/Mojito">Mojito</a> often consists of five ingredients: <span
+            class="ingredients">white
+            rum</span>, <span class="ingredients">sugar</span>
+        (traditionally <span class="ingredients">sugar cane juice</span>), <span class="ingredients">lime juice</span>,
+        <span class="ingredients">soda
+            water</span>, and <span class="ingredients">mint</span>.
+    </p>
+    <p>The <a href="https://en.wikipedia.org/wiki/Old_fashioned_(cocktail)">old fashioned</a> is a cocktail made by
+        <span class="ingredients">muddling sugar</span> with <span class="ingredients">bitters</span> and <span
+            class="ingredients">water</span>, adding <span class="ingredients">whiskey</span> or
+        sometimes <span class="ingredients">brandy</span>, and garnishing with an <span class="ingredients">orange
+            slice</span> or zest and a <span class="ingredients">cocktail
+            cherry</span>.
+    </p>
+    <br><br>
+    <!-- Ex 3 -->
+    <p class="sentence">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reiciendis!</p>
+    <p class="sentence">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, porro!</p>
+    <p class="sentence">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, fugiat.</p>
+    <br><br>
+    <!-- Ex 4 -->
+    <div class="dog">
+        <img src="dog.jpg" alt="dog">
+        <div class="header">DOG</div>
+    </div>
+</body>
+
+</html>
