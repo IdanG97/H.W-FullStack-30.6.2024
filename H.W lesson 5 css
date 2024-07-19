@@ -1,0 +1,111 @@
+/* Ex 5 */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galaxy_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    background: url('Copy\ of\ galaxy_background.jpg') no-repeat center center;
+    background-size: 200%;
+    width: 1100px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.small_planet {
+    width: 150px; 
+    height: auto;
+}
+
+.medium_planet {
+    width: 200px; 
+    height: auto;
+}
+
+.large_planet {
+    width: 300px; 
+    height: auto;
+}
+
+.small_planet {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.medium_planet {
+    animation: rotate_and_scale 15s linear infinite;
+}
+
+@keyframes rotate_and_scale {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.large_planet {
+    animation: rotate_scale_and_twist 20s linear infinite;
+}
+
+@keyframes rotate_scale_and_twist {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+ /* Ex 6 */
+
+ .space_container_circles {
+    position: relative; 
+}
+
+.circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle.small {
+    width: 50px;
+    height: 50px;
+    top: 130px;
+    left: 670px;
+}
+
+.circle.medium {
+    width: 90px;
+    height: 90px;
+    top: 350px;
+    left: 370px;
+}
+
+.circle.large {
+    width: 150px;
+    height: 150px;
+    top: 175px;
+    left: 470px;
+}
+
+/* Ex 7 */
+
+img {
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+td {
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
