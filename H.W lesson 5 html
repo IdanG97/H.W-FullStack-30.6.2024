@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework lesson 5</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Ex 5 -->
+    <div class="galaxy_container">
+        <img src="Copy of planet5.jpg" alt="small_planet" class="small_planet">
+        <img src="Copy of planet1 (1).jpg" alt="medium_planet" class="medium_planet">
+        <img src="Copy of planet2.jpg" alt="large_planet" class="large_planet">
+    </div>
+
+    <!-- Ex 6 -->
+    <div class="galaxy_container space_container_circles">
+        <div class="circle small"></div>
+        <div class="circle medium"></div>
+        <div class="circle large"></div>
+    </div>
+
+    <!-- Ex 7 -->
+    <table>
+        <tr>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_white.png" alt="White"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_white.png" alt="White"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_red.png" alt="Red"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+        </tr>
+
+        <tr>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_black.jpg" alt="Black"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+            <td><img src="square_white.png" alt="White"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
