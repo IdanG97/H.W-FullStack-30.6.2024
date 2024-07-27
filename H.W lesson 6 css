@@ -1,0 +1,243 @@
+/* Ex 1 */
+.container {
+    background-color: rgba(43, 255, 0, 0.556); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.image {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: auto;
+}
+
+.paragraph {
+    margin-right: 45px; 
+    text-align: center;
+    padding: 10px;
+}
+
+/* Ex 2 */
+.color_box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px; 
+    height: 300px; 
+    border: 3px solid black;
+}
+.cube {
+    flex: 1 0 25%; 
+    box-sizing: border-box;
+    height: 75px;
+}
+.cube:nth-child(1) {
+     background-color: red;
+     border: 3px solid black; 
+    }
+.cube:nth-child(2) {
+     background-color: rgb(255, 98, 98);
+    }
+.cube:nth-child(3) {
+     background-color: rgb(255, 98, 98);
+    }
+.cube:nth-child(4) {
+     background-color: rgb(255, 98, 98);
+    }
+.cube:nth-child(5) {
+     background-color: rgb(212, 0, 0);
+     border: 3px solid black; 
+     border-right: none;
+    }
+.cube:nth-child(6) {
+     background-color: rgb(212, 0, 0);
+     border: 3px solid black; 
+     border-left: none;
+    }
+.cube:nth-child(7) {
+     background-color: rgb(255, 98, 98);
+    }
+.cube:nth-child(8) {
+     background-color: rgb(255, 98, 98);
+    }
+.cube:nth-child(9) {
+     background-color: rgb(161, 0, 0);
+     border: 3px solid black; 
+     border-right: none;
+    }
+.cube:nth-child(10) {
+     background-color: rgb(161, 0, 0);
+     border: 3px solid black; 
+     border-right: none;
+     border-left: none;
+    }
+.cube:nth-child(11) {
+     background-color: rgb(161, 0, 0);
+     border: 3px solid black; 
+     border-left: none;
+    }
+.cube:nth-child(12) {
+     background-color: rgb(255, 98, 98);
+    }
+.cube:nth-child(13) {
+     background-color: rgb(100, 0, 0);
+     border: 3px solid black; 
+     border-right: none;
+    }
+.cube:nth-child(14) {
+     background-color: rgb(100, 0, 0);
+     border: 3px solid black; 
+     border-right: none;
+     border-left: none;
+    }
+.cube:nth-child(15) {
+     background-color: rgb(100, 0, 0);
+     border: 3px solid black; 
+     border-right: none;
+     border-left: none;
+    }
+.cube:nth-child(16) {
+     background-color: rgb(100, 0, 0);
+     border: 3px solid black; 
+     border-left: none;
+    }
+    
+/* Ex 5 */
+.box {
+    width: 600px;
+    height: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.a {
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+}
+
+.b {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(116, 194, 111);
+} 
+
+.d {
+    width: 600px;
+    height: 50px;
+    background-color: rgb(0, 140, 0);
+}  
+
+/* Ex 6 */
+.grid_container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    border: 1px solid black;
+    width: 40%;
+    margin: auto;
+    margin-top: -350px;
+    margin-right: 500px;
+}
+.header1, .nav1, .section1, .footer1 {
+    padding: 2%;
+}
+.header1 {
+    background-color: #3498db; 
+    height: 20px;
+}
+
+.nav1 {
+    background-color: #e74c3c; 
+    height: 5px;
+}
+
+.section1 {
+    background-color: #2ecc71; 
+    margin: 10px 20px;
+    height: 200px;
+}
+
+.footer1 {
+    background-color: #f1c40f; 
+    height: 10px;
+    text-align: left;
+} 
+
+/* Ex 7 */
+.container_grid {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    margin-bottom: -400px;
+    border: 1px solid black;
+}
+
+.header2 {
+    text-align: center;
+    padding: 15px;
+    background-color: purple;
+    color: white;
+}
+
+.nav2 {
+    text-align: center;
+    padding: 5px;
+    background-color: #0400fe;
+    color: white;
+}
+
+.color_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+    padding: 20px;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: rgb(255, 200, 0);
+    color: white;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: rgb(255, 0, 242);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+}
