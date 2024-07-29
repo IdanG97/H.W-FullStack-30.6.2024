@@ -1,0 +1,184 @@
+/* Ex 1 */
+.grid_container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "left center right"
+        "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    left: 0;
+}
+
+header {
+    grid-area: header;
+    background: linear-gradient(to right, #008609, #b8bcfe);
+    color: white;
+    text-shadow: 2px 2px 4px #ff2525;
+    text-align: center;
+    padding: 10px;
+}
+
+.center {
+    grid-area: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.center img {
+    width: 100%;
+    height: 325px;
+    opacity: 0.7;
+}
+
+.side {
+    grid-area: left / left / right / right;
+    background: linear-gradient(to bottom, #1701bd, #649af6);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    writing-mode: vertical-rl;
+    text-align: center;
+    padding: 10px;
+    color: yellow;
+}
+
+.side.left {
+    grid-area: left;
+}
+
+.side.right {
+    grid-area: right;
+}
+
+footer {
+    grid-area: footer;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+ /* Ex 2 */
+ .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50px;
+}
+
+.solar-counter {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.sun {
+    width: 90px;
+    height: 90px;
+    background-image: url('photo-thumb-92493.png'); 
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rotateSun 5s linear infinite;
+}
+
+.cloud {
+    width: 80px;
+    height: 60px;
+    background-image: url('images.png'); 
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: moveCloud 10s linear infinite;
+}
+
+@keyframes rotateSun {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+@keyframes moveCloud {
+    0% {
+        left: 120px;
+    }
+    50% {
+        left: 1620px;
+    }
+    100% {
+        left: 120px;
+    }
+}
+
+/* Ex 3 */
+.container2 {
+    display: flex;
+    align-items: flex-end;
+    height: 0;
+    position: relative;
+}
+
+.color_box {
+    width: 200px;
+    height: 200px;
+    background-color: #56e0ff;
+    border: 5px solid pink;
+    position: relative;
+    overflow: hidden;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes upDown {
+    0% { transform: translateY(0); background-color: rgb(255, 0, 230); }
+    50% { transform: translateY(170px); background-color: yellow; }
+    100% { transform: translateY(0); background-color: rgb(255, 0, 230); }
+}
+
+@keyframes diagonalMove {
+    0% { transform: translateY(0) translateX(0); background-color: rgb(255, 0, 230); }
+    50% { transform: translateY(170px) translateX(85px); background-color: green; }
+    100% { transform: translateY(0) translateX(0); background-color: rgb(255, 0, 230); }
+}
+
+@keyframes diagonalMove2 {
+    0% { transform: translateY(0) translateX(0); background-color: rgb(255, 0, 230); }
+    50% { transform: translateY(170px) translateX(-85px); background-color: orange; }
+    100% { transform: translateY(0) translateX(0); background-color: rgb(255, 0, 230); }
+}
+
+.ball1 {
+    animation: upDown 3s infinite;
+    top: 0; 
+    left: calc(50% - 15px);
+}
+
+.ball2 {
+    animation: diagonalMove 3s infinite;
+    top: 0; 
+    left: calc(25% - 15px); 
+}
+
+.ball3 {
+    animation: diagonalMove2 3s infinite;
+    top: 0; 
+    left: calc(75% - 15px); 
+}
