@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework lesson 7</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Ex 1 -->
+    <div class="grid_container">
+        <header>Hello students</header>
+        <div class="side left">Ecom</div>
+        <div class="center">
+            <img src="569143-dirt-road-forest.jpg" alt="Center Image">
+        </div>
+        <div class="side right">Ecom</div>
+        <footer>Footer</footer>
+    </div>
+
+    <!-- Ex 2 -->
+    <div class="container1">
+        <div class="solar-counter">
+            <div class="sun"></div>
+            <div class="cloud"></div>
+        </div>
+    </div>
+
+    <!-- Ex 3 -->
+    <div class="container2">
+        <div class="color_box">
+            <div class="ball ball1"></div>
+            <div class="ball ball2"></div>
+            <div class="ball ball3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
