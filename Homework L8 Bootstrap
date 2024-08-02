@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework lesson 8</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Ex 1 -->
+    <p><strong>Bootstrap</strong> Let's get started</p>
+    <!-- Ex 2 -->
+    <h3>User input</h3>
+    Type <kbd>ls</kbd> to list all files in the
+    current directory. <br>
+    To copy files, select the files and
+    press <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd>
+    <br>
+    To paste files, select the files and
+    press <kbd><kbd>ctrl</kbd> + <kbd>v</kbd></kbd>
+    <br>
+    <!-- Ex 3 -->
+    <pre class="pre-scrollable">
+        <code> 
+            <h1>Title One</h1> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum harum perferendis placeat. Amet quidem ipsa corporis incidunt, error sunt sapiente totam sequi architecto alias, et, aut dignissimos? Deleniti, fuga.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum harum perferendis placeat. Amet quidem ipsa corporis incidunt, error sunt sapiente totam sequi architecto alias, et, aut dignissimos? Deleniti, fuga.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum harum perferendis placeat. Amet quidem ipsa corporis incidunt, error sunt sapiente totam sequi architecto alias, et, aut dignissimos? Deleniti, fuga.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum harum perferendis placeat. Amet quidem ipsa corporis incidunt, error sunt sapiente totam sequi architecto alias, et, aut dignissimos? Deleniti, fuga.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum harum perferendis placeat. Amet quidem ipsa corporis incidunt, error sunt sapiente totam sequi architecto alias, et, aut dignissimos? Deleniti, fuga.</p> 
+        </code> 
+    </pre>
+    <!-- Ex 4 -->
+    <h3>Inline Code</h3>
+    <p>
+        We define paragraphs in HTML using the
+        <code>&lt;p&gt;</code> tag.
+    </p>
+    <!-- Ex 5 -->
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <br><br>
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger">Left</button>
+        <button type="button" class="btn btn-warning">Middle</button>
+        <button type="button" class="btn btn-success">Right</button>
+        </div>
+</body>
+
+</html>
