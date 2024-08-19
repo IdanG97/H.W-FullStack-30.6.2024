@@ -1,0 +1,138 @@
+// Ex 1
+// 1
+let allDaysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+console.log(allDaysOfWeek);
+
+// 2
+let sortedAllDaysOfWeek = allDaysOfWeek.slice().sort();
+console.log("Sorted array:", sortedAllDaysOfWeek);
+
+// 3
+function printArray(arr) {
+    console.log("Array:", arr);
+}
+
+function sortArray(arr) {
+    return arr.slice().sort();
+}
+
+printArray(allDaysOfWeek);
+let sortedArray = sortArray(allDaysOfWeek);
+printArray(sortedArray);
+
+// Ex 2
+// 1
+let numArray = [10, 20, 30, 40, 50];
+function printArrayValueAtIndex(arr, index) {
+    // 2
+    if (index >= 0 && index < arr.length) {
+        console.log("Value at index", index + ":", arr[index]);
+    } else {
+        // 3
+        console.log(`Sorry, no value in the array for index number: ${index}`);
+    }
+}
+
+// example
+printArrayValueAtIndex(numArray, 3);
+printArrayValueAtIndex(numArray, 5);
+
+// Ex 3 
+function checkIfAllOdd(arr) {
+    return arr.every(num => num % 2 !== 0) ? "odds" : "not odds";
+}
+
+// example 
+let allOddsArray = [1, 3, 5, 7, 9];
+let mixedArray = [2, 3, 5, 7, 9];
+
+console.log(checkIfAllOdd(allOddsArray));
+console.log(checkIfAllOdd(mixedArray));
+
+// Ex 4
+function updateArrayByIndex(arr) {
+
+    const updatedArray = arr.map((value, index) => {
+
+        if (index < 10) {
+            return value + 5;
+        }
+        return value;
+    });
+
+
+    console.log(updatedArray);
+}
+
+// example
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+updateArrayByIndex(myArray);
+
+
+// Ex 5
+function checkNumberInArray(arr, number) {
+    if (arr.includes(number)) {
+        return "found";
+    } else {
+        return "not found";
+    }
+}
+
+// example 
+const myArray1 = [1, 2, 4, 6, 7];
+const result1 = checkNumberInArray(myArray1, 4);
+const result2 = checkNumberInArray(myArray1, 10);
+
+console.log(result1);
+console.log(result2);
+
+// Ex 6
+function checkArrayBounds(arr, firstValue, lastValue) {
+    if (arr.length > 0 && arr[0] === firstValue && arr[arr.length - 1] === lastValue) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// example
+const MyArray1 = [5, 2, 3, 7];
+const MyArray2 = [5, 2, 3, 8];
+const result3 = checkArrayBounds(MyArray1, 5, 7);
+const result4 = checkArrayBounds(MyArray2, 5, 7);
+
+console.log(result3);
+console.log(result4);
+
+// Ex 7
+function checkArrayRange(arr) {
+    if (arr.length === 0) {
+        return "No condition is happening";
+    }
+    if (arr.every(value => value < 50)) {
+        return "smaller than 50";
+    }
+    if (arr.every(value => value >= 51 && value <= 100)) {
+        return "between 51 to 100";
+    }
+    if (arr.every(value => value >= 101 && value <= 200)) {
+        return "between 101 to 200";
+    }
+    if (arr.every(value => value > 200)) {
+        return "greater than 200";
+    }
+    return "No condition is happening";
+}
+
+// example
+const array1 = [10, 20, 30];
+const array2 = [60, 70, 80];
+const array3 = [120, 150, 180];
+const array4 = [210, 220, 230];
+const array5 = [30, 70, 150];
+
+console.log(checkArrayRange(array1));
+console.log(checkArrayRange(array2));
+console.log(checkArrayRange(array3));
+console.log(checkArrayRange(array4));
+console.log(checkArrayRange(array5));
