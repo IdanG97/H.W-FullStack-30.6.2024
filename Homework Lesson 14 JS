@@ -1,0 +1,123 @@
+// Ex 1
+const person = {
+    firstName: "Idan",
+    lastName: "Gueta"
+};
+function displayName(person) {
+    console.log(person.firstName + " " + person.lastName);
+}
+displayName(person);
+
+// Ex 2
+const cat = {
+    tiredness: 4,
+    hunger: 5,
+    loneliness: 6,
+    happiness: 3,
+
+    feed() {
+        if (this.hunger > 0) {
+            this.hunger--;
+            this.happiness++;
+        }
+    },
+
+    sleep() {
+        if (this.tiredness > 0) {
+            this.tiredness--;
+            this.happiness++;
+        }
+    },
+
+    pet() {
+        if (this.loneliness > 0) {
+            this.loneliness--;
+            this.happiness++;
+        }
+    },
+
+    play() {
+        if (this.happiness < 10 && this.tiredness < 10) {
+            this.happiness++;
+            this.tiredness++;
+            this.hunger++;
+        }
+    },
+
+    status() {
+        console.log(`Tiredness: ${this.tiredness}`);
+        console.log(`Hunger: ${this.hunger}`);
+        console.log(`Loneliness: ${this.loneliness}`);
+        console.log(`Happiness: ${this.happiness}`);
+    }
+};
+
+cat.feed();
+cat.sleep();
+cat.pet();
+cat.play();
+cat.status();
+
+// Ex 3
+const beefBurgerRecipe = {
+    title: "Beef Burger",
+    numberOfOrders: 15,
+    isVegan: false,
+    ingredients: ["Beef patty", "Lettuce", "Tomato", "Cheese", "Pickles", "Onions", "Burger bun", "spicy mayo"],
+
+    updateServings: function (newServings) {
+        this.numberOfOrders = newServings;
+    },
+
+    deleteIngredient: function (ingredient) {
+        const index = this.ingredients.indexOf(ingredient);
+        if (index > -1) {
+            this.ingredients.splice(index, 1);
+        } else {
+            console.log(`${ingredient} not found in ingredients.`);
+        }
+    },
+
+    updateIngredient: function (oldIngredient, newIngredient) {
+        const index = this.ingredients.indexOf(oldIngredient);
+        if (index > -1) {
+            this.ingredients[index] = newIngredient;
+        } else {
+            console.log(`${oldIngredient} not found in ingredients.`);
+        }
+    },
+
+    printReceipt: function () {
+        console.log("Recipe: " + this.title);
+        console.log("Number of Orders: " + this.numberOfOrders);
+        console.log("Vegan: " + (this.isVegan ? "Yes" : "No"));
+        console.log("Ingredients: " + this.ingredients.join(", "));
+    },
+
+    isReceiptVegan: function () {
+        return this.isVegan;
+    }
+};
+
+beefBurgerRecipe.updateServings(30);
+beefBurgerRecipe.deleteIngredient("Cheese");
+beefBurgerRecipe.updateIngredient("Tomato", "Grilled Tomato");
+beefBurgerRecipe.printReceipt();
+const isVegan = beefBurgerRecipe.isReceiptVegan();
+console.log("Is the recipe vegan? " + (isVegan ? "Yes" : "No"));
+
+// Ex 4
+const books = [
+    { title: "Surrounded By Idiots", author: "Thomas Erickson", alreadyRead: true },
+    { title: "the alchemist", author: "Paulo Coelho", alreadyRead: false },
+    { title: "Rich Dad, Poor Dad", author: "Robert T. Kiyosaki", alreadyRead: true },
+    { title: "Things I Wish I Knew I My 20s", author: "Tina Siling", alreadyRead: false }
+];
+
+books.forEach(book => {
+    if (book.alreadyRead) {
+        console.log(`You already read "${book.title}" by ${book.author}.`);
+    } else {
+        console.log(`You still need to read "${book.title}" by ${book.author}.`);
+    }
+});
