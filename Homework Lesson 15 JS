@@ -1,0 +1,178 @@
+// for loops
+
+// Ex 1
+function printNumbers() {
+    for (let num = 1; num <= 10; num++) {
+        console.log(num);
+    }
+}
+
+printNumbers();
+
+// Ex 2
+let arr2 = [12, 34, 7, 89, 7, 45, 23, 7, 67];
+let elementToDelete = 7;
+let result2 = deleteElement(arr2, elementToDelete);
+
+function deleteElement(arr, element) {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== element) {
+            result.push(arr[i]);
+        }
+    }
+
+    return result;
+}
+
+console.log(result2);
+
+// Ex 3
+let arr3 = [63, 4, 26, 89, 33, 68, 19, 8, 75];
+let result3 = countOddAndEven(arr3);
+
+function countOddAndEven(arr) {
+    let counts = {
+        odd: 0,
+        even: 0
+    };
+
+    for (let i = 0; i < arr3.length; i++) {
+        if (arr3[i] % 2 === 0) {
+            counts.even++;
+        } else {
+            counts.odd++;
+        }
+    }
+
+    return counts;
+}
+
+console.log(result3);
+
+// Ex 4
+let arr4 = [12, 34, 7, 89, 12, 45, 23, 34, 67, 12, 89];
+let result4 = findDup(arr4);
+
+function findDup(arr4) {
+    let counts = {};
+    let result = {};
+
+    for (let i = 0; i < arr4.length; i++) {
+        let num = arr4[i];
+        counts[num] = (counts[num] || 0) + 1;
+    }
+
+    for (let num in counts) {
+        if (counts[num] > 1) {
+            result[num] = counts[num];
+        }
+    }
+
+    return result;
+}
+
+console.log(result4);
+
+// Ex 5
+// 1
+for (let i = 1; i <= 20; i++) {
+    console.log(i);
+}
+// 2
+for (let i = 3; i <= 29; i += 2) {
+    console.log(i);
+}
+// 3
+for (let i = 20; i >= 2; i -= 2) {
+    console.log(i);
+}
+// 4
+for (let i = 50; i >= 20; i--) {
+    if (i % 3 === 0) {
+        console.log(i);
+    }
+}
+
+// Ex 6
+let string = 'LaunchCode';
+let array6 = [1, 5, 'LC101', 'blue', 42];
+
+for (let i = 0; i < array6.length; i++) {
+    console.log(array6[i]);
+}
+
+for (let i = string.length - 1; i >= 0; i--) {
+    console.log(string[i]);
+}
+
+// while loops 
+
+// Ex 7
+function printHello10() {
+    let count = 0;
+
+    while (count < 10) {
+        console.log("Hello");
+        count++;
+    }
+}
+
+printHello10();
+
+// Ex 8
+let array8 = [5, 10, 15, 20];
+let limit = 25;
+let result8 = calculateSum(array8, limit);
+
+function calculateSum(arr, num) {
+    let sum = 0;
+    let i = 0;
+
+    while (i < arr.length) {
+        if (sum + arr[i] >= num) {
+            return sum;
+        }
+        sum += arr[i];
+        i++;
+    }
+
+    return sum;
+}
+
+console.log(result8);
+
+// Ex 9
+let booleanArray = [true, true, false, true, false];
+let result9 = findFirstFalseIndex(booleanArray);
+
+function findFirstFalseIndex(arr) {
+    let i = 0;
+    while (i < arr.length) {
+        if (arr[i] === false) {
+            return i;
+        }
+        i++;
+    }
+    return -1;
+}
+
+console.log(result9);
+
+// Ex 10
+const array10 = ["Hi", "hey there", "Goodbye", "Hello", "See you"];
+const index = findHelloAtOddIndex(array10);
+
+function findHelloAtOddIndex(arr) {
+    let i = 0;
+    while (i < arr.length) {
+        if (arr[i] === "Hello" && i % 2 !== 0) {
+            return i;
+        }
+        i++;
+    }
+    return -1;
+}
+
+console.log(index);
