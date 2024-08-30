@@ -1,0 +1,79 @@
+// Try - catch
+
+// Ex 1
+"SyntaxError"
+
+// Ex 2
+"SyntaxError"
+
+// Ex 3
+// a) 
+"SyntaxError"
+// b) 
+let json = '{ "age" : 30 }';
+try {
+    let user = JSON.parse(json);
+
+    if (!user.name) {
+        throw new Error("Name is missing");
+    }
+
+    alert(user.name);
+} catch (err) {
+    alert("Error has occurred: " + err.message);
+}
+
+// Ex 4
+let persons = [
+    { id: 1, name: "John", lastName: "Doe", age: 25, grades: [85, 90, 78] },
+    { id: 2, name: "Jane", lastName: "Smith", age: 30, grades: [88, 92, 95] },
+    { id: 3, name: "Emily", lastName: "Jones", age: "twenty-five", grades: [91, 87, 99] },
+    { id: 2, name: "Michael", lastName: "Brown", age: 22, grades: [100, 105] }
+];
+
+function validatePersons(persons) {
+    try {
+        let ids = new Set();
+
+        persons.forEach(person => {
+            if (!Number.isInteger(person.age)) {
+                throw new Error(`Age for person with id ${person.id} is not an integer`);
+            }
+
+            if (ids.has(person.id)) {
+                throw new Error(`Duplicate id found: ${person.id}`);
+            } else {
+                ids.add(person.id);
+            }
+
+            person.grades.forEach(grade => {
+                if (grade < 0 || grade > 100) {
+                    throw new Error(`Grade ${grade} for person with id ${person.id} is out of range (0-100)`);
+                }
+            });
+        });
+
+        console.log("All persons validated successfully");
+    } catch (err) {
+        console.error("Error occurred: " + err.message);
+    }
+}
+
+validatePersons(persons);
+
+// Arrow function
+
+// 1)
+const sum = (a, b) => a + b;
+console.log(sum(5, 3));
+
+// 2)
+const showAlert = () => alert("message!");
+showAlert();
+
+// 3)
+let x1 = (x) => x + 1;
+// console.log(x(5));
+
+// 4)
+"The output will show the age 25 twice"
