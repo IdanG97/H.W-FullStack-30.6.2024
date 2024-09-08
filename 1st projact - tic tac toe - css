@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('TicTacToe.jpg');
+    background-color: rgba(255, 255, 255, 0.886);
+    background-blend-mode: lighten;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+.compMode, .playerMode {
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.compMode input, .playerMode input {
+    margin-right: 0.5rem;
+    accent-color: #0f5c8c; /* Customize the color of the radio button */
+}
+
+.compMode {
+    color: #0f5c8c; /* Color for the 'Play against Computer' label */
+}
+
+.playerMode {
+    color: #f27a41; /* Color for the 'Play against Player' label */
+}
+
+
+.play-area {
+    display: grid;
+    box-shadow: 0 0 20px rgba(61, 168, 255, 0.98);
+    grid-template-columns: auto auto auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid black;
+    transition: background 0.2s ease-in-out;
+}
+
+.block:hover {
+    cursor: pointer;
+    background: #49dbee;
+}
+
+.occupied:hover {
+    background: #ff3a3a;
+}
+
+.win {
+    background: #0ff30f;
+}
+
+#block_0,
+#block_1,
+#block_2 {
+    border-top: none;
+}
+
+#block_0,
+#block_3,
+#block_6 {
+    border-left: none;
+}
+
+#block_6,
+#block_7,
+#block_8 {
+    border-bottom: none;
+}
+
+#block_2,
+#block_5,
+#block_8 {
+    border-right: none;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+
+.playerWin {
+    color: green;
+}
+
+.computerWin {
+    color: red;
+}
+
+.draw {
+    color: orangered;
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5em;
+    }
+
+    h2 {
+        margin-top: 1em;
+        font-size: 1.3rem;
+    }
+}
+
+.error {
+    background-color: #ff3a3a;
+    transition: background 0.5s ease-in-out;
+}
