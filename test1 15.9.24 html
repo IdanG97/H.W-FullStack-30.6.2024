@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1 15.9.24</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Row</th>
+                <th>TV Brand</th>
+                <th>Store Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Price</th>
+                <th>Store's Website</th>
+                <th>Store's Rating</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="LG-Logo.png" alt="LG" class="icon"></td>
+                <td>א.ל.מ</td>
+                <td>הסתת 18</td>
+                <td>אילת</td>
+                <td>₪5,608</td>
+                <td><a href="https://www.alm.co.il/171660133.html" target="_blank">Visit</a></td>
+                <td>2/5</td>
+                <td>
+                    <button class="delete">Delete</button>
+                    <button class="buy">Buy</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td><img src="Samsung_Logo.svg.webp" alt="Samsung" class="icon"></td>
+                <td>מחסני חשמל</td>
+                <td>הפטיש 6, ישפרו סנטר</td>
+                <td>נס ציונה</td>
+                <td>₪6,199</td>
+                <td><a href="https://www.payngo.co.il/tv-and-entertainment/led-4k-screens/tv-screens/329631.html"
+                        target="_blank">Visit</a></td>
+                <td>1/5</td>
+                <td>
+                    <button class="delete">Delete</button>
+                    <button class="buy">Buy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="sony logo.png" alt="Sony" class="icon"></td>
+                <td>סופר אלקטריק</td>
+                <td>רוטשילד 34</td>
+                <td>בת ים</td>
+                <td>₪8,290</td>
+                <td><a href="https://www.superelectric.co.il/product/sony-xr-75x90l" target="_blank">Visit</a></td>
+                <td>3/5</td>
+                <td>
+                    <button class="delete">Delete</button>
+                    <button class="buy">Buy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="hisence logo.jpg" alt="Hisense" class="icon"></td>
+                <td>עולם הקולנוע</td>
+                <td>שדרות ההסתדרות 58</td>
+                <td>חיפה</td>
+                <td>₪4,199</td>
+                <td><a href="https://www.cwc.co.il/product/%d7%9e%d7%a1%d7%9a-%d7%a7%d7%99%d7%95-%d7%9c%d7%93-75-%d7%90%d7%99%d7%a0%d7%a5-hisense-75a7gq/"
+                        target="_blank">Visit</a></td>
+                <td>5/5</td>
+                <td>
+                    <button class="delete">Delete</button>
+                    <button class="buy">Buy</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="test1.js"></script>
+</body>
+
+</html>
