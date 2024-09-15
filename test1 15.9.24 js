@@ -1,0 +1,72 @@
+document.querySelectorAll('.delete').forEach(button => {
+    button.addEventListener('click', function () {
+        // remove the row when deleted
+        const row = this.closest('tr');
+        row.remove();
+    });
+});
+
+// event listener for buy buttons
+document.querySelectorAll('.buy').forEach(button => {
+    button.addEventListener('click', function () {
+        const row = this.closest('tr');
+        const storeName = row.cells[2].innerText; // get the store name from the row
+        const price = row.cells[5].innerText; // Get the price from the row
+
+        // redirect to a new page with store name and price as URL parameters
+        window.location.href = `buyPage.html?store=${encodeURIComponent(storeName)}&price=${encodeURIComponent(price)}`;
+    });
+});
+
+function calculateAveragePrice(rows1) {
+    // sum up all the prices
+    let totalPrice = rows1.reduce((sum, row) => {
+        // remove the '₪' symbol and commas, then convert price to a number
+        let price = parseFloat(row.price.replace(/[^0-9.-]+/g, ""));
+        return sum + price;
+    }, 0);
+
+    // calculate the average price
+    return totalPrice / rows1.length;
+}
+
+const rows1 = [
+    { storeName: "א.ל.מ", address: "הסתת 18", city: "אילת", price: "₪5,608", rating: "4/5" },
+    { storeName: "מחסני חשמל", address: "הפטיש 6", city: "נס ציונה", price: "₪6,199", rating: "1/5" },
+    { storeName: "סופר אלקטריק", address: "רוטשילד 34", city: "בת ים", price: "₪8,290", rating: "3/5" },
+    { storeName: "עולם הקולנוע", address: "שדרות ההסתדרות 58", city: "חיפה", price: "₪4,199", rating: "5/5" }
+];
+
+const averagePrice = calculateAveragePrice(rows1);
+console.log("Average Price: ₪" + averagePrice.toFixed(2));
+
+function findBestOption(rows) {
+    // Define a function to convert price to a number for comparison
+    const parsePrice = (priceString) => parseFloat(priceString.replace(/[^0-9.-]+/g,""));
+
+    // Filter rows by rating
+    const filteredRows = rows.filter(row => row.rating === "4/5" || row.rating === "5/5");
+
+    // Check if there are no valid options
+    if (filteredRows.length === 0) {
+        return null;
+    }
+
+    // Find the row with the lowest price
+    let bestRow = filteredRows.reduce((best, current) => {
+        return parsePrice(current.price) < parsePrice(best.price) ? current : best;
+    });
+
+    // Return the id of the best row
+    return bestRow.id;
+}
+
+const rows2 = [
+    { id: 1, storeName: "א.ל.מ", address: "הסתת 18", city: "אילת", price: "₪5,608", rating: "4/5" },
+    { id: 2, storeName: "מחסני חשמל", address: "הפטיש 6", city: "נס ציונה", price: "₪6,199", rating: "1/5" },
+    { id: 3, storeName: "סופר אלקטריק", address: "רוטשילד 34", city: "בת ים", price: "₪8,290", rating: "3/5" },
+    { id: 4, storeName: "עולם הקולנוע", address: "שדרות ההסתדרות 58", city: "חיפה", price: "₪4,199", rating: "5/5" }
+];
+
+const bestOptionId = findBestOption(rows2);
+console.log("Best Option ID: " + bestOptionId);
