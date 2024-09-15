@@ -1,0 +1,103 @@
+body {
+    background: #105469;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+table {
+    width: 80%;
+    max-width: 1200px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    margin: 0 auto;
+}
+
+thead {
+    background: linear-gradient(90deg, #007BFF, #00BFFF);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+th {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+
+tbody {
+    background-color: rgb(165, 166, 255);
+}
+
+tr:nth-child(even) {
+    background-color:rgb(165, 166, 255);
+}
+
+tr:nth-child(odd) {
+    background-color:rgb(165, 166, 255);
+}
+
+tr:hover {
+    background-color: #c2c2c2;
+}
+
+tbody tr:last-child {
+    background-color: rgb(72, 243, 72);
+}
+
+tbody tr:nth-child(2) {
+    background-color: red;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icon {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+button.buy {
+    background-color: #007bff;
+    color: white;
+}
+
+button.buy:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
