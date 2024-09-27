@@ -1,0 +1,30 @@
+document.getElementById('searchBtn').addEventListener('click', () => {
+    const city = document.getElementById('city').value;
+    if (city) {
+        fetchWeather(city);
+    }
+});
+
+function fetchWeather(city) {
+    const apiKey = '3069ae2718e40f8dc1998b7250e16f10';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => displayWeather(data))
+        .catch(error => console.log('Error fetching data:', error));
+}
+
+function displayWeather(data) {
+    if (data.cod === 200) {
+        document.getElementById('cityName').textContent = data.name;
+        document.getElementById('temp').textContent = data.main.temp;
+        document.getElementById('windSpeed').textContent = data.wind.speed;
+        document.getElementById('weatherMain').textContent = data.weather[0].main;
+        document.getElementById('weatherIcon').src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+
+        document.getElementById('weatherInfo').style.display = 'block';
+    } else {
+        alert('City not found');
+    }
+}
