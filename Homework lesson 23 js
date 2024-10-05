@@ -1,0 +1,50 @@
+const pokemonListContainer = document.getElementById('pokemon-list');
+const pokemonNameDisplay = document.getElementById('pokemon-name');
+const pokemonImageDisplay = document.getElementById('pokemon-image');
+
+let pokemonCounter = 1;
+
+async function getAllPokemon() {
+  try {
+    const response = await fetch('https://pokeapi.co/api/v2/generation/1');
+    const data = await response.json();
+    const pokemonSpecies = data.pokemon_species;
+
+    pokemonSpecies.forEach((pokemon, index) => {
+      const p = document.createElement('p');
+      const a = document.createElement('a');
+      
+      a.textContent = pokemon.name;
+      a.href = '#';
+      a.id = 'pokemon-' + (index + 1);
+     
+      a.addEventListener('click', () => {
+        getPokemonDetails(pokemon.name);
+      });
+   
+      p.textContent = `pokemon species no ${index + 1}. `;
+      p.appendChild(a);
+      
+      pokemonListContainer.appendChild(p);
+    });
+  } catch (error) {
+    console.error('Error fetching Pokémon list:', error);
+  }
+}
+
+async function getPokemonDetails(pokemonName) {
+  try {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+    const data = await response.json();
+    
+    pokemonNameDisplay.textContent = '';
+    pokemonImageDisplay.src = '';
+    
+    pokemonNameDisplay.textContent = data.name;
+    pokemonImageDisplay.src = data.sprites.front_default;
+  } catch (error) {
+    console.error('Error fetching Pokémon details:', error);
+  }
+}
+
+getAllPokemon();
