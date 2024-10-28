@@ -83,7 +83,7 @@
   }
   
   .card .front {
-    background-image: url('sim1.png');
+    background-image: url('memory_game.png');
     background-size: cover;
     background-position: center;
   }
